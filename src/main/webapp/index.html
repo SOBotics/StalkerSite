@@ -21,29 +21,49 @@
 </head>
 <body>
 
-<div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://sobotics.org"><img src="https://avatars1.githubusercontent.com/u/21141173"></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://chat.stackoverflow.com/rooms/111347/sobotics">Chatroom</a></li>
+                    <li><a href="https://github.com/SOBotics">Github</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
 
-    <div class="page-header">
-        <h1>Find suspended users on creation</h1>
-        <p class="lead">Enter the site, and the number of past hours to search.</p>
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Find users suspended on creation</h1>
+            <p class="lead">Enter the site, and the number of past hours to search.</p>
+        </div>
+
+        <label for="inputSite" class="sr-only">Site Name</label>
+        <input type="text" id="inputSite" class="form-control" placeholder="Site" required autofocus>
+        <label for="inputHours" class="sr-only">Hours</label>
+        <input type="text" id="inputHours" class="form-control" placeholder="Hours" required>
+
+        <div>
+            <input type="button" class="btn btn-lg btn-primary btn-block" id= "submit" name="submit" value="check">
+        </div>
+
+        <br />
+        <br />
+
+        <p class="output"></p>
+
     </div>
 
-    <label for="inputSite" class="sr-only">Site Name</label>
-    <input type="text" id="inputSite" class="form-control" placeholder="Site" required autofocus>
-    <label for="inputHours" class="sr-only">Hours</label>
-    <input type="text" id="inputHours" class="form-control" placeholder="Hours" required>
-
-    <div>
-        <input type="button" class="btn btn-lg btn-primary btn-block" id= "submit" name="submit" value="check">
-    </div>
-
-    <br />
-    <br />
-
-    <p class="output"></p>
-
-
-</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
