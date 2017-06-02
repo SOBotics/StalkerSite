@@ -10,9 +10,9 @@ $button.on('click', function(){
         for($i=0; $i<data["items"].length; $i++){
             var item = data["items"][$i]
             var  userlink = '<a href="'+ item['link']+'">'+ item['username']+'</a>';
-            $output+= '<div class="row"><div class="col-md-2">'+($i+1)+'</div><div class="col-md-10">'+ userlink+'</div></div>'
+            $output+= '<div class="row"><div class="col-md-4">'+($i+1)+'</div><div class="col-md-8">'+ userlink+'</div></div>'
         }
-        $output+="<p>Quota remaining: "+data['quota']+" </p>"
+        $output+="<br /><br /><p>Quota remaining: "+data['quota']+" </p>"
         $(".output").html($output);
     })
 })
