@@ -1,6 +1,7 @@
 var $button = $("#submit");
 
 $button.on('click', function(){
+    $(".output").html("");
     var siteName = $("#inputSite").val();
     var hours = $("#inputHours").val();
     var url = "/stalker/api/users/suspended?site="+siteName+"&hours="+hours;
