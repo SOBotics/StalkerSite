@@ -8,6 +8,9 @@ $button.on('click', function(){
     $.getJSON(url,function (data) {
         $output = ""
         $i=0
+        if (data["items"].length==0){
+            $output+= "<p>No suspended users found</p>";
+        }
         for($i=0; $i<data["items"].length; $i++){
             var item = data["items"][$i]
             var  userlink = '<a href="'+ item['link']+'">'+ item['username']+'</a>';
