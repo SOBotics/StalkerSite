@@ -17,6 +17,6 @@ $button.on('click', function(){
             $output+= '<div class="row"><div class="col-md-4">'+($i+1)+'</div><div class="col-md-8">'+ userlink+'</div></div>'
         }
         $output+="<br /><br /><p>Quota remaining: "+data['quota']+" </p>"
-        $(".output").html($output);
+        $(".output").html($output); 
     })
 })
