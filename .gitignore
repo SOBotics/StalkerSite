@@ -1,0 +1,8 @@
+/.idea/
+/.openshift/
+/*.iml
+/src/main/java/
+/src/main/resources/
+/src/test/
+/target/
+/webapps/
